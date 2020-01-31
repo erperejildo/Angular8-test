@@ -4,10 +4,16 @@
     header {
         background-color: #fff;
 
-        .page {
+        .page-link {
             border-right: 1px solid  #f1f5f8; // TODO: move to a var
-            padding: 15px 10px;
+            cursor: pointer;
+            font-size: 12px;
+            padding: 10px;
             text-align: center;
+
+            &:hover {
+                background-color: #eee;
+            }
 
             &:last-child {
                 border-right: none;

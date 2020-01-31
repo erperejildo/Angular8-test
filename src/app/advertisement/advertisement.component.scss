@@ -21,12 +21,13 @@
         }
     }
 
-    .flex-small {
+    .flex .flex-small {
         flex: 1;
     }
 
     .flex-medium {
         flex: 2;
+        font-size: 11px;
         text-align: center;
     }
 
@@ -44,7 +45,7 @@
         border-radius: 20px;
         color: #fff;
         display: inline-flex;
-        margin-top: 10px;
+        margin: 10px 10px 0 10px;
         padding: 5px 15px;
     }
 
@@ -53,7 +54,7 @@
         border-radius: 5px;
         color: #fff;
         margin-top: 15px;
-        padding: 5px;
+        padding: 10px;
     }
 
     .details-link {
