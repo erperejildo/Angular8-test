@@ -7,6 +7,9 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { BottomContainerComponent } from './bottom-container/bottom-container.component';
 import { AdvertisementComponent } from './advertisement/advertisement.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { PageOneComponent } from './page-one/page-one.component';
+import { PageTwoComponent } from './page-two/page-two.component';
+import { PageThreeComponent } from './page-three/page-three.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     NavigationBarComponent,
     BottomContainerComponent,
     AdvertisementComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    PageOneComponent,
+    PageTwoComponent,
+    PageThreeComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,11 @@
 :host {
     display: block;
     background-color: #fff;
-    padding: var(--space-medium) 50px;
+    padding: 20px;
+
+    @media screen and (min-width: $sizeTablet) {
+        padding: var(--space-medium) 50px;
+    }
 
     #offers-container {
         border-bottom: 1px solid #abb9be;
