@@ -1,0 +1,21 @@
+:host {
+    #stars {
+        line-height: 1;
+        --percent: calc(var(--rating) / 5 * 100%);
+
+        &::before {
+            background: linear-gradient(90deg, #59d8d1 var(--percent), #ddd var(--percent));
+            background-clip: text;
+            color: #59d8d1; // TODO: var
+
+            content: '★★★★★';
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    #reviews-number {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+}

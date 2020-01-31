@@ -3,12 +3,9 @@
 
     header {
         background-color: #fff;
-        display: flex;
-        flex-wrap: wrap;
 
         .page {
-            border-right: 1px solid #ddd;
-            flex-grow: 1;
+            border-right: 1px solid  #f1f5f8; // TODO: move to a var
             padding: 15px 10px;
             text-align: center;
 
