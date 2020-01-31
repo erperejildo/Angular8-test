@@ -1,5 +1,63 @@
 :host {
     display: block;
     background-color: #fff;
-    padding: 20px 40px; // TODO: use var
+    padding: 30px 50px; // TODO: use var
+
+    #offers-container {
+        border-bottom: 1px solid #abb9be;
+        padding-bottom: 30px;
+        margin-top: 20px;
+
+        #offers-list {
+            padding-left: 30px;
+
+            li {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .flex-small {
+        flex: 1;
+    }
+
+    .flex-medium {
+        flex: 2;
+        text-align: center;
+    }
+
+    .flex-big {
+        flex: 3;
+        color: var(--color-primary);
+    }
+
+    .credit-card {
+        width: 100%;
+    }
+
+    .btn-very_good {
+        background-color: var(--color-secondary);
+        border-radius: 20px;
+        color: #fff;
+        display: inline-flex;
+        margin-top: 10px;
+        padding: 5px 15px;
+    }
+
+    .btn-apply {
+        background-color: #fa6e3d;
+        border-radius: 5px;
+        color: #fff;
+        margin-top: 15px;
+        padding: 5px;
+    }
+
+    .details-link {
+        color: var(--color-primary);
+        margin-top: 15px;
+    }
 }

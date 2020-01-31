@@ -4,9 +4,9 @@
         --percent: calc(var(--rating) / 5 * 100%);
 
         &::before {
-            background: linear-gradient(90deg, #59d8d1 var(--percent), #ddd var(--percent));
+            background: linear-gradient(90deg, var(--color-secondary) var(--percent), #ddd var(--percent));
             background-clip: text;
-            color: #59d8d1; // TODO: var
+            color: var(--color-secondary); // TODO: var
 
             content: '★★★★★';
             -webkit-background-clip: text;

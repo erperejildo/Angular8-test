@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+:root {
+    --color-primary: #1194f6;
+    --color-secondary: #59d8d1;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
