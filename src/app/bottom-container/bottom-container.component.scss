@@ -1,7 +1,7 @@
 :host {
     display: block;
     background-color: #f1f5f8;
-    padding: 40px 30px 30px 30px;
+    padding: 40px var(--space-medium) var(--space-medium) var(--space-medium);
 
     #container-title {
         font-family: ExtraBold;

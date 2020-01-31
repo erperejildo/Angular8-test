@@ -4,8 +4,10 @@
     max-width: 800px;
 
     #header-container {
+        background-color: #23123a;
         background-image: url("src/assets/images/header-background.png");
         background-position: bottom;
+        background-repeat: no-repeat;
         background-size: 100% auto;
         font-family: ExtraBold;
         padding-top: 45px;
@@ -15,5 +17,5 @@
 #title {
     color: #fff;
     font-size: 60px;
-    padding: 30px 30px 250px 30px;
+    padding: var(--space-medium) var(--space-medium) 250px var(--space-medium);
 }

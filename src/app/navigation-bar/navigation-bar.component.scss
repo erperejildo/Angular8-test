@@ -1,3 +1,5 @@
+@import "src/app/themes/variables";
+
 :host {
     display: block;
 
@@ -5,7 +7,6 @@
         background-color: #fff;
 
         .page-link {
-            border-right: 1px solid  #f1f5f8; // TODO: move to a var
             cursor: pointer;
             font-size: 12px;
             padding: 10px;
@@ -15,8 +16,12 @@
                 background-color: #eee;
             }
 
-            &:last-child {
-                border-right: none;
+            @media screen and (min-width: $sizeTablet) {
+                border-right: 1px solid var(--color-grey-light);
+
+                &:last-child {
+                    border-right: none;
+                }
             }
         }
     }

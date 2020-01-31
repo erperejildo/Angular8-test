@@ -1,15 +1,17 @@
+@import "src/app/themes/variables";
+
 :host {
     display: block;
     background-color: #fff;
-    padding: 30px 50px; // TODO: use var
+    padding: var(--space-medium) 50px;
 
     #offers-container {
         border-bottom: 1px solid #abb9be;
-        padding-bottom: 30px;
+        padding-bottom: var(--space-medium);
         margin-top: 20px;
 
         #offers-list {
-            padding-left: 30px;
+            padding-left: var(--space-medium);
 
             li {
                 margin-bottom: 10px;
@@ -23,6 +25,14 @@
 
     .flex .flex-small {
         flex: 1;
+
+        &:last-of-type {
+            margin-top: 15px;
+
+            @media screen and (min-width: $sizeTablet) {
+                margin-top: 0;
+            }
+        }
     }
 
     .flex-medium {
@@ -45,7 +55,7 @@
         border-radius: 20px;
         color: #fff;
         display: inline-flex;
-        margin: 10px 10px 0 10px;
+        margin-top: 10px;
         padding: 5px 15px;
     }
 
@@ -53,8 +63,12 @@
         background-color: #fa6e3d;
         border-radius: 5px;
         color: #fff;
-        margin-top: 15px;
+        margin: 15px 0;
         padding: 10px;
+
+        @media screen and (min-width: $sizeTablet) {
+            margin-bottom: 0;
+        }
     }
 
     .details-link {
