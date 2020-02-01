@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageTwoRouteGuard } from './pages/page-two/page-two-route.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -8,33 +9,28 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/home/home.module').then(m => m.HomeComponentModule)
   },
-  /*{
-    path: 'gallery',
-    children: [
-      {
-        path: '',
-        loadChildren: () =>
-          import('./pages/gallery/gallery.module').then(
-            m => m.GalleryComponentModule
-          )
-      },
-      {
-        path: 'portraits',
-        loadChildren: () =>
-          import('./pages/portraits/portraits.module').then(
-            m => m.PortraitsComponentModule
-          )
-      },
-      {
-        path: 'museums',
-        canActivate: [MuseumRouteGuard],
-        loadChildren: () =>
-          import('./pages/museums/museums.module').then(
-            m => m.MuseumsComponentModule
-          )
-      }
-    ]
-  },*/
+  {
+    path: 'page-one',
+    loadChildren: () =>
+      import('./pages/page-one/page-one.module').then(
+        m => m.PageOneComponentModule
+      )
+  },
+  {
+    path: 'page-two',
+    canActivate: [PageTwoRouteGuard],
+    loadChildren: () =>
+      import('./pages/page-two/page-two.module').then(
+        m => m.PageTwoComponentModule
+      )
+  },
+  {
+    path: 'page-three',
+    loadChildren: () =>
+      import('./pages/page-three/page-three.module').then(
+        m => m.PageThreeComponentModule
+      )
+  },
   { path: '**', redirectTo: 'home' }
 ];
 

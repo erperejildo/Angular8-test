@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-page-three',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-three.component.scss']
 })
 export class PageThreeComponent implements OnInit {
-
-  constructor() { }
+  constructor(private navigationService: NavigationService) {}
 
   ngOnInit() {
+    // this loads before anything
+    this.navigationService.visitedPageThree = true;
   }
-
 }

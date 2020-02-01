@@ -1,7 +1,9 @@
 <div id="container">
   <div id="header-container">
     <app-navigation-bar></app-navigation-bar>
-    <div id="title">Do the right thing.</div>
+    <div id="title"><a routerLink="/home">Do the right thing.</a></div>
   </div>
-  <router-outlet></router-outlet>
+  <div id="page-container">
+    <router-outlet></router-outlet>
+  </div>
 </div>
