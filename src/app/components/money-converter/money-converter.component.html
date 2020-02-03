@@ -1,5 +1,3 @@
---> Your money: {{money | currency}}
-
-<span *ngIf="oldValue">
-- Old value: {{oldValue}}
-</span>
+--> Your money: {{ money | currency }}
+<ng-content></ng-content>
+<span *ngIf="oldValue"> - Old value: {{ oldValue }} </span>
