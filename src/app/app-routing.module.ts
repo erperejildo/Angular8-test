@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageTwoRouteGuard } from './pages/page-two/page-two-route.guard';
+import { PageTwoRouteGuard } from './guards/page-two-route.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
