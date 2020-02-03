@@ -2,10 +2,10 @@
   <div id="header-container">
     <app-navigation-bar></app-navigation-bar>
     <div id="title"><a routerLink="/home">Do the right thing.</a></div>
+    <div id="page-container">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-  <div id="page-container">
-    <router-outlet></router-outlet>
-  </div>
-</div>
 
-<app-login-popup *ngIf="navigationService.showLogin"></app-login-popup>
+  <app-login-popup *ngIf="navigationService.showLogin"></app-login-popup>
+</div>

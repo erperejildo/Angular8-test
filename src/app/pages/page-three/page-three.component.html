@@ -1,7 +1,6 @@
-<input type="number" [(ngModel)]="money" />
 <app-money-converter [money]="money" (update)="countChange($event)"
-  >This is ng-content in action</app-money-converter
->
+  ><input type="number" [(ngModel)]="money" />
+</app-money-converter>
 
 <h3>Check also some nested routes:</h3>
 <nav mat-tab-nav-bar class="mat-elevation-z8">
