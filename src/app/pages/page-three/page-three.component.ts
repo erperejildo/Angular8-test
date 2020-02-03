@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageThreeComponent implements OnInit {
   money = 1234;
+  navLinks = [
+    { location: 'page-four', label: 'Page Four' },
+    { location: 'page-five', label: 'Page five' }
+  ];
   constructor() {}
 
   ngOnInit() {}

@@ -26,16 +26,28 @@ const routes: Routes = [
   },
   {
     path: 'page-three',
-    loadChildren: () =>
-      import('./pages/page-three/page-three.module').then(
-        m => m.PageThreeComponentModule
-      )
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/page-three/page-three.module').then(
+            m => m.PageThreeComponentModule
+          )
+      }
+      /*{
+        path: 'page-four',
+        loadChildren: () =>
+          import('./pages/page-three/page-four/page-four.module').then(
+            m => m.PageFourComponentModule
+          )
+      }*/
+    ]
   },
   { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
