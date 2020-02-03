@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PageTwoComponent } from './page-two.component';
 import { PageTwoComponentRoutingModule } from './page-two-routing.module';
-import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [PageTwoComponent],
-  imports: [PageTwoComponentRoutingModule, FormsModule],
+  imports: [PageTwoComponentRoutingModule, CommonModule],
   exports: [PageTwoComponent],
   entryComponents: [PageTwoComponent]
 })
