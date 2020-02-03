@@ -1,2 +1,2 @@
 <input type="number" [(ngModel)]="money"/>
-<app-money-converter [money]="money"></app-money-converter>
+<app-money-converter [money]="money" (update)="countChange($event)"></app-money-converter>

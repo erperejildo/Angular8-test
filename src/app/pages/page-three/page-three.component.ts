@@ -10,4 +10,10 @@ export class PageThreeComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  countChange(moneyUpdated) {
+    // we can detect when we modify the money inside money-converter component
+    // from this point we could do some other operations
+    console.log(moneyUpdated);
+  }
 }

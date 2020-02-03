@@ -1,4 +1,11 @@
-import { Component, OnChanges, Input, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  OnChanges,
+  Input,
+  SimpleChanges,
+  EventEmitter,
+  Output
+} from '@angular/core';
 
 @Component({
   selector: 'app-money-converter',
@@ -7,6 +14,8 @@ import { Component, OnChanges, Input, SimpleChanges } from '@angular/core';
 })
 export class MoneyConverterComponent implements OnChanges {
   @Input() money: number;
+  @Output() update: EventEmitter<number> = new EventEmitter<number>();
+
   oldValue: number;
 
   constructor() {}
@@ -14,5 +23,6 @@ export class MoneyConverterComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     // this is just another silly example but can listen changes like this
     this.oldValue = changes.money.previousValue;
+    this.update.emit(this.money);
   }
 }
