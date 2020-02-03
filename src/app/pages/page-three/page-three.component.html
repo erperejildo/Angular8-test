@@ -1,4 +1,2 @@
-<div>
-    <input type="number" [(ngModel)]="money" />
---> Your money: {{money | currency}}
-  </div>
+<input type="number" [(ngModel)]="money"/>
+<app-money-converter [money]="money"></app-money-converter>

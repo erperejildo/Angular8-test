@@ -1,4 +1,4 @@
-import { OnInit, Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-page-three',
@@ -6,8 +6,7 @@ import { OnInit, Component } from '@angular/core';
   styleUrls: ['./page-three.component.scss']
 })
 export class PageThreeComponent implements OnInit {
-  money = 0;
-
+  money = 1234;
   constructor() {}
 
   ngOnInit() {}
