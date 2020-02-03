@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root' // TODO change to module
+  providedIn: 'root'
 })
 export class NavigationService {
-  visitedPageThree = false;
+  logged = false;
+  showLogin = false;
 
   constructor() {}
 }
