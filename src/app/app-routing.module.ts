@@ -11,7 +11,6 @@ const routes: Routes = [
   },
   {
     path: 'page-one',
-    data: { animation: 'isRight' },
     loadChildren: () =>
       import('./pages/page-one/page-one.module').then(
         m => m.PageOneComponentModule
